@@ -62,7 +62,7 @@ header nav a{
 }
 
 .sobre_mim article{
-    width: 614;
+    width: 314;
     height: 186;
     opacity: 1;
     display:flex;
@@ -79,10 +79,46 @@ header nav a{
 }
 .sobre_mim article p{
     width: 614;
-    height: 134.139892578125;
+    height: 134;
     top: 117.86px;
     left: 599px;
     opacity: 1;
 }
 
+.listas{
+    width: 1440;
+    height: 289;
+    top: 427px;
+    gap: 26px;
+    opacity: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
 
+.listas div{
+    width: 595;
+    height: 249;
+    gap: 26px;
+    opacity: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+}
+
+li{
+    display: inline;
+    width: 102;
+    height: 150;
+    gap: 10px;
+    opacity: 1;
+    padding: 17px;
+    border-radius: 5px;
+    background: #DFDFDF;
+
+}
