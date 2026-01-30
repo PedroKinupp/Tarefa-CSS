@@ -153,6 +153,16 @@ header nav a{
   align-items: flex-end;
 }
 
+.rank ul .top li{
+  justify-content: space-between;
+}
+.rank ul .top li div{
+  background: #C4C4C4;
+  width:15%;
+  height: 30px;
+  border-radius: 5px;
+}
+
 .rank ul .bottom{
   display: flex;
   height: 150px;
@@ -322,5 +332,19 @@ footer button{
     gap: 3%;
     justify-content: center;
     align-items: flex-end;
+  }
+  form{
+    margin: 76px 10px;
+  }
+  footer{
+    margin-top: 20%;
+  }
 }
+
+@media(max-width:450px){
+  footer nav{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
 }
