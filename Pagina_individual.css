@@ -331,7 +331,7 @@ footer button{
 
 .hover-area img {
   opacity: 0;
-  transition: opacity 0.8s;
+  transition: opacity 0.5s;
   position: absolute;
   top: 0%;
   left: 0;
