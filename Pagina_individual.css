@@ -74,6 +74,16 @@ header nav a{
   justify-content: center;
   gap: 5%;
 }
+/* mecânica de hover*/
+.listas img{
+  display:none;
+}
+
+.listas ul li:hover img{
+  transition: 0.5s;
+  display: block;
+  border-radius: 5px;
+}
 
 .hobbies{
   width: 45%;
@@ -115,7 +125,7 @@ header nav a{
   background: #DFDFDF;
   border-radius:5px;
   height: 150px;
-  width: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -176,7 +186,7 @@ header nav a{
   background: #DFDFDF;
   border-radius:5px;
   height: 150px;
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -238,6 +248,13 @@ form button{
   align-self: flex-end;
   border-radius: 5px;
   border: none;
+}
+
+.hover_area:hover{
+  background-color: rgb(0, 0, 175);
+  transition: 0.5s;
+  border-radius: 5px;
+  color: white;
 }
 
 footer{
