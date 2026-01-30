@@ -283,6 +283,10 @@ form div button{
     opacity: 1;
 }
 
+form div button:hover{
+    background: #003a86;
+}
+
 form div{
     display:flex;
     gap:15px;
@@ -327,11 +331,11 @@ footer button{
 
 .hover-area img {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.8s;
   position: absolute;
   top: 0%;
   left: 0;
-  width: 138px;
+  width: 137px;
   border-radius:10px
 }
 
