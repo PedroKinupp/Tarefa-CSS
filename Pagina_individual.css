@@ -320,3 +320,22 @@ footer button{
     position: relative;
     right:100px;
 }
+
+.hover-area {
+  position: relative;
+}
+
+.hover-area img {
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 138px;
+  border-radius:10px
+}
+
+.hover-area:hover img {
+  display: block;
+  opacity: 1;
+}
