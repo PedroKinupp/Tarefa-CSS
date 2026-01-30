@@ -77,6 +77,8 @@ header nav a{
 /* mecânica de hover*/
 .listas img{
   display:none;
+  position: absolute;
+  translate: 0px -30px;
 }
 
 .listas ul li:hover img{
