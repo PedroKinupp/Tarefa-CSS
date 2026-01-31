@@ -216,7 +216,7 @@ form{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 76px 20%;
+  margin: 38px 20%;
 }
 
 form div{
@@ -275,6 +275,29 @@ form button{
   color: white;
 }
 
+.Meu_Jogo{
+  height: 387px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 38px 20%;
+}
+
+.Meu_Jogo div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:5%;
+}
+
+.Meu_Jogo div nav a button{
+  background: #D9D9D9;
+  height: 39px;
+  align-self: flex-end;
+  border-radius: 5px;
+  border: none;
+}
+
 footer{
   background: #C4C4C4;
   height: 70;
@@ -307,7 +330,7 @@ footer button{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 42%;
+    height: 33%;
   }
   .sobre_mim article{
     width: 90%;
@@ -382,6 +405,9 @@ footer button{
   }
   .rank ul .bottom li{
     width:33%;
+  }
+  .Meu_Jogo div{
+    flex-direction: column;
   }
 }
 
