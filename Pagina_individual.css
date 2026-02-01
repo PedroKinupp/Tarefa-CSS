@@ -23,6 +23,82 @@ header{
   padding: 0% 5%;
   box-shadow: 0px 4px 4px 0px #1403ff40;
 }
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.linha {
+  height: 4px;
+  background: #4144e0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.links {
+  position: fixed;
+  top: 109px;
+  right: 0;
+  width: 30%;
+  height: 20%;
+  background: rgba(0, 0, 0, 0.95);
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+}
+
+#menu-toggle:checked + .menu-icon .linha:nth-child(1) {
+  transform: rotate(45deg) translate(13px, 13px);
+}
+
+#menu-toggle:checked + .menu-icon .linha:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon .linha:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#menu-toggle:checked ~ .links {
+  transform: scale(1);
+}
+
+/* Estilo do Menu */
+.menu {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #4144e0;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ffffff;
+}
 
 h1{
   font-family: Alata;
@@ -341,17 +417,14 @@ footer button{
   .sobre_mim article{
     width: 90%;
   }
-  h1{
-    font-size: 100%;
-  }
-  header nav{
-    display: none;
-  }
   form{
     margin: 76px 10px;
   }
   footer{
     margin-top: 20%;
+  }
+  .menu ul li a {
+    font-size: 1rem;
   }
 }
 
